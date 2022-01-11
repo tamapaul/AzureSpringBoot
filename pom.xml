@@ -103,8 +103,10 @@
 					</execution>
 				</executions>
 				<configuration>
-					<repository>in28min/${project.artifactId}</repository>
+					<repository>in28minTama/${project.artifactId}</repository>
 					<tag>${project.version}</tag>
+					<dockerDirectory>Docker</dockerDirectory>
+					<dockerHost>https://localhost:3000</dockerHost>
 					<skipDockerInfo>true</skipDockerInfo>
 				</configuration>
 			</plugin>
